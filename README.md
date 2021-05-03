@@ -1,8 +1,29 @@
 # INTEGRATION OF GOOGLE SPEECH RECOGNITION IN NAO ROBOT
 
+**ABSTRACT**
+This integration records user audio through microphone, recognizes speeches using Google Speech Recognition and uses NAO robot to say that speech.
+
 **PRE-REQUISITE**
 
 In this integration, you should already know how to bringup NAO with ROS. If not, [this](https://github.com/maxie1059/nao_ros/blob/master/README.md) is where you learn it.
+
+**SETUP**
+1. Install PyPi SpeechRecognition package
+```
+pip install SpeechRecognition
+```
+2. Install pyaudio if you are using earphone microphone to record the audio
+```
+sudo apt-get install python-pyaudio python3-pyaudio
+```
+3. Test those packages out
+```
+python -m speech_recognition
+```
+In case pyaudio version error pop up (the PyPi package needs pyaudio version 0.2.11+), simply
+```
+pip install --upgrade pyaudio
+```
 
 **INTEGRATION**
 
