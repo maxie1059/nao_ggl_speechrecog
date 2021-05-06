@@ -44,7 +44,7 @@ rosrun hello_world recog
 - In the 'recog' script, the ambient noise will be calibrated first in order to recognize if the user is speaking. That also means whenever there are some new unwelcoming noises enter during the audio recording, the recognizing process will take longer and less accurate. The only solution for this problem is that the room must stay as quiet as when it was calibrated.
 
 **TROUBLESHOOT**
-  After the audio has been recorded, if this error appeared:
+- After the audio has been recorded, if this error appeared:
   ```
   No JSON object could be decoded.
   ```
